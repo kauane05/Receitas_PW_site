@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    /*Modifica a maneira de exibir o tamanho de uma caixa, define como as dimensões de um elemento são calculadas: devem concluir preenchimento e bordas ou não*/
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+.cabecalho{
+    padding: 30px;
+    text-align: center;
+    background-color: #83c5be;
+}
+.cabecalho h1 {
+font-size: 70px;
+}
+.topnav{
+    overflow: hidden;
+    background-color: #ffddd2;
+}
+.topnav a{
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav a:hover{
+    background-color: rgb(236, 233, 189);
+    color: rgb(12, 12, 12);
+    border-bottom: #dfdeaa solid 4px;
+    box-shadow: #e4df9b 4px 5px;
+    border-end-end-radius: 10px;
+}
+.topnav{
+   
+    display:block;
+    
+}
+.center{
+   
+    text-align: center;
+}
+
+.imagens{
+    width: 50px;
+    padding:20px
+}
+.principal{
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.card{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer{
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+    overflow: hidden;
+    background-color: #83c5be;
+}
+
+.topnavfooter{
+    overflow: hidden;
+
+}
+.topnavfooter a{
+    float: center;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.imagens{
+    padding: 20px;
+    margin: 80px;
+    width: 150px;
+	display: inline-block;
+}

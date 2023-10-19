@@ -1,0 +1,17 @@
+.cadastro
+{
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.btn-primary
+{
+    width: 100px;
+    color: #83c5be;
+}
+
+label
+{
+    color: #000;
+}

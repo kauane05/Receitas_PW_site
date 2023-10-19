@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="php/cadastrar_produto.php">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+
+</head>
+<body>
+     
+    <header class="cabecalho">
+        <h1> Cadastrar Produto </h1>
+    </header>
+    <nav class="topnav">
+      <a href="funcionario.html">Cadastrar Funcionário</a>
+      <a href="produto.html">Cadastrar Produto</a>
+      <a href="receita.html">Cadastrar Receita</a>
+      <a href="usuario.html">Cadastrar Usuário</a>
+      <a href="venda.html">Cadastrar Venda</a>
+      <a href="assinatura.html">Cadastrar Assinatura</a>
+  </nav>
+
+    <form action="php/cadastrar_produto.php" method="POST">
+        <div class="cadastro">
+          <div class="row g3">
+  
+            <div class="form-group col-md-6">
+              <label for="Nome">Nome do produto</label>
+              <input type="text" class="form-control" id="Nome" placeholder="Nome" name="produto"
+              required minlength="4" maxlength="10" title="Nome inválido" autocomplete="off">
+              <span class="mensagem-erro" data-erro=""></span>
+            </div>
+  
+            <div class="form-group col-md-6">
+              <label for="Endereco">Data de validade</label>
+              <input type="date" class="form-control" id="Data" 
+              required autocomplete="off" name="data_vali">
+              <span class="mensagem-erro" data-erro=""></span>
+             </div>  
+          
+           <div class="form-group col-md-6">
+            <label for="Ingredientes">Código</label>
+            <input type="text" class="form-control" name="codigo" id="codigo" 
+            placeholder="Digite o código " required  autocomplete="off">
+            <span class="mensagem-erro" data-erro=""></span>
+           </div>
+  
+            <div class="form-group col-md-6">
+              <label for="preparo">Quantidade</label>
+              <input type="text" class="form-control" name="quantidade" id="quantidade"
+               required="required" autocomplete="off" placeholder="Quantidade do produto">
+              <span class="mensagem-erro" data-erro=""></span>
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="Nome">Descrição do produto</label>
+              <input type="text" class="form-control" id="descricao" placeholder="Descrição" name="pro_des"
+              required minlength="4" maxlength="10" title="Nome inválido" autocomplete="off">
+              <span class="mensagem-erro" data-erro=""></span>
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="Endereco">Data de fabricação</label>
+              <input type="date" class="form-control" id="Data" 
+              required autocomplete="off" name="data">
+              <span class="mensagem-erro" data-erro=""></span>
+             </div>  
+
+       </div>
+
+       <input type="submit" class="btn btn-primary" onclick="validacampo()" value="Cadastrar">
+       </div>
+        </form>
+        
+      
+      
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+      crossorigin="anonymous"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+      crossorigin="anonymous"></script>
+
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+      crossorigin="anonymous"></script>
+
+      <script src="js/produto.js"></script>
+
+</body>
+</html>

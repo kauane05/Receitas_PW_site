@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+
+</head>
+<body>
+     
+    <header class="cabecalho">
+        <h1> Cadastrar Receita </h1>
+     </header>
+     <nav class="topnav">
+      <a href="funcionario.html">Cadastrar funcionário</a>
+      <a href="produto.html">Cadastrar Produto</a>
+      <a href="receita.html">Cadastrar Receita</a>
+      <a href="usuario.html">Cadastrar Usuário</a>
+      <a href="venda.html">Cadastrar Venda</a>
+      <a href="assinatura.html">Cadastrar Assinatura</a>
+  </nav>
+
+          <form>
+      <div class="cadastro">
+        <div class="row g3">
+
+          <div class="form-group col-md-6">
+            <label for="Nome">Nome da receita</label>
+            <input type="text" class="form-control" id="Nome" placeholder="Nome" name="nome"
+            required minlength="4" maxlength="10" title="Nome inválido" autocomplete="off">
+            <span class="mensagem-erro" data-erro=""></span>
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="Tipo">Tipo da receita</label>
+            <select id="tipo" name="tipo" class="form-control" required>
+              <option selected value="">Escolher...</option>
+              <option value="doce">Doce</option>
+              <option value="salgada">Salgada</option>
+            </select>
+            <span class="mensagem-erro" data-erro=""></span>
+
+          </div>
+        
+         <div class="form-group col-md-6">
+          <label for="Ingredientes">Ingredientes</label>
+          <input type="text" class="form-control" name="ingrediente" id="ingredientes" 
+          placeholder="Digite os ingredientes" required  autocomplete="off">
+          <span class="mensagem-erro" data-erro=""></span>
+         </div>
+
+          <div class="form-group col-md-6">
+            <label for="preparo">Modo de preparo</label>
+            <input type="text" class="form-control" name="preparo" id="preparo"
+             required="required" autocomplete="off" placeholder="Modo de preparo">
+            <span class="mensagem-erro" data-erro=""></span>
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="preparo">Tempo de preparo</label>
+            <input type="text" class="form-control" name="preparo" id="preparo"
+             required="required" autocomplete="off" placeholder="Tempo de preparo">
+            <span class="mensagem-erro" data-erro=""></span>
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="Nome">Nome do chef da receita</label>
+            <input type="text" class="form-control" id="Nome" placeholder="Nome" name="nome"
+            required minlength="4" maxlength="10" title="Nome inválido" autocomplete="off">
+            <span class="mensagem-erro" data-erro=""></span>
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="Endereco">Data de publicação</label>
+            <input type="date" class="form-control" id="Data" 
+            required autocomplete="off" name="data">
+            <span class="mensagem-erro" data-erro=""></span>
+           </div>  
+
+           <div class="form-group col-md-6">
+            <label for="Nome">Quantas pessoas serve</label>
+            <input type="text" class="form-control" id="Nome" placeholder="Quantidade" name="nome"
+            required minlength="4" maxlength="10" title="Nome inválido" autocomplete="off">
+            <span class="mensagem-erro" data-erro=""></span>
+          </div>
+
+     </div>
+    
+     <button type="submit" class="btn btn-primary" onclick="validacampo()">Cadastrar</button>
+
+     </div>
+      </form>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+      crossorigin="anonymous"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+      crossorigin="anonymous"></script>
+
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+      crossorigin="anonymous"></script>
+
+      <script src="js/receita.js"></script>
+
+</body>
+</html>
