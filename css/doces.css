@@ -1,20 +1,33 @@
+* {
+
+    box-sizing: border-box;
+    /*Modifica a maneira de exibir o tamanho de uma caixa, define como as dimensões de um elemento são calculadas: devem concluir preenchimento e bordas ou não*/
+}
 
 body{
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
-    background-color: #f1f1f1;
+    background-color: #ffffff;
+   
+   
 }
 .cabecalho{
-    padding: 30px;
+    padding: 5px;
     text-align: center;
-    background-color: #83c5be;
+    background-color:  #96c4c4;
+    border: 5px solid  #96c4c4;
 }
 .cabecalho h1 {
 font-size: 70px;
 }
+.principal{
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
 .topnav{
     overflow: hidden;
-    background-color: #ffddd2;
+    background-color: #dcffff;
+    border: 5px solid  #96c4c4;
 }
 .topnav a{
     float: left;
@@ -37,12 +50,13 @@ font-size: 70px;
     
 }
 .footer{
-    padding: 20px;
+    padding: 5px;
     text-align: center;
     background: #ddd;
     margin-top: 20px;
     overflow: hidden;
-    background-color: #83c5be;
+    background-color:  #96c4c4;
+    border: 5px solid  #96c4c4;
 }
 .topnavfooter{
     overflow: hidden;
@@ -57,10 +71,24 @@ font-size: 70px;
     text-decoration: none;
 }
 .doces{
-    padding: 20px;
-    margin: 10px;
+    padding: 14px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.salgados{
+    padding: 14px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagem{
+    width: 20px;
+    padding:20px;
 }
 
 .txt{
     text-align: center;
+   
 }

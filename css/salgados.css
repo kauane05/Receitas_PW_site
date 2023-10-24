@@ -60,6 +60,12 @@ font-size: 70px;
     padding: 14px 16px;
     text-decoration: none;
 }
+.salgados{
+    padding: 14px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .txt{
     text-align: center;
 }
