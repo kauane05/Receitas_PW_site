@@ -64,10 +64,11 @@ font-size: 70px;
     text-decoration: none;
 }
 .doces{
-    padding: 14px 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width:100%;
+    float:left;
+    padding: 20px 16px;
+    border-radius: 100%;
+   
 }
 .txt{
     text-align: center;
