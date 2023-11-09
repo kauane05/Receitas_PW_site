@@ -140,4 +140,13 @@
 
 #login_button:hover {
     transform: scale(1.05);
+  
 }
+button {
+    background-color: #aacad8;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
