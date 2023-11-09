@@ -6,6 +6,7 @@
     <title>Cadastrar</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="php/cadastrar_assinatura.php">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
@@ -26,76 +27,33 @@
         <a href="assinatura.html">Cadastrar Assinatura</a>
     </nav>
 
-    <form>
+    <form action="php/cadastrar_assinatura.php" method="POST">
         <div class="cadastro">
         <div class="row g3">
 
           <div class="form-group col-md-6">
             <label for="Nome">Nome do cliente</label>
             <input type="text" class="form-control" id="Nome" placeholder="Nome" name="nome"
-            required minlength="4" maxlength="10" autocomplete="off">
+            required minlength="4" maxlength="200" autocomplete="off">
             <span class="mensagem-erro" data-erro=""></span>
           </div>
 
           <div class="form-group col-md-6">
-            <label for="Nomefun">Nome do funcionário</label>
-            <input type="text" class="form-control" id="Nomefun" placeholder="Nome" name="nomefun"
-            required minlength="4" maxlength="10" autocomplete="off">
+            <label for="Email">E-mail</label>
+            <input type="text" class="form-control" id="Email" placeholder="Email" name="email"
+            required minlength="4" maxlength="200" autocomplete="off">
             <span class="mensagem-erro" data-erro=""></span>
+            
           </div>
 
           <div class="form-group col-md-6">
-            <label for="Email">Número da assinatura</label>
-            <input type="text" class="form-control" id="Numero" placeholder="Número da venda"
-            required name="numero"
-            autocomplete="off">
-            <span class="mensagem-erro" data-erro=""></span>
-          </div>
-        
-         <div class="form-group col-md-6">
-          <label for="Endereco">Valor da assinatura</label>
-          <input type="text" class="form-control" id="Valor" placeholder="Digite o valor da venda"
-          required  autocomplete="off" name="valor">
-          <span class="mensagem-erro" data-erro=""></span>
-         </div>
-
-         <div class="form-group col-md-6">
-            <label for="Tipo">Tipo da venda</label>
-            <select id="Tipo" name="tipo" class="form-control" required>
-              <option selected value="">Escolher...</option>
-              <option value="vista">À vista</option>
-              <option value="parcelada">Parcelada</option>
-              <option value="pix">Pix</option>
-              <option value="cartao">Cartão</option>
-            </select>
+            <label for="Senha">Senha</label>
+            <input type="text" class="form-control" id="Senha" placeholder="Senha" name="senha"
+            required minlength="4" maxlength="200" autocomplete="off">
             <span class="mensagem-erro" data-erro=""></span>
           </div>
 
-          <div class="form-group col-md-6">
-            <label for="Endereco">Data de assinatura</label>
-            <input type="date" class="form-control" id="Data" 
-            required autocomplete="off" name="data">
-            <span class="mensagem-erro" data-erro=""></span>
-           </div>
-
-           <div class="form-group col-md-6">
-            <label for="Periodo">Período de assinatura</label>
-            <select id="Periodo" name="periodo" class="form-control" required>
-              <option selected value="">Escolher...</option>
-              <option value="mes">1 Mês</option>
-              <option value="meses">6 Meses</option>
-              <option value="meses">12 Meses</option>
-            </select>
-            <span class="mensagem-erro" data-erro=""></span>
-          </div>
-
-          <div class="form-group col-md-6">
-            <label for="Endereco">Data de encerramento da assinatura</label>
-            <input type="date" class="form-control" id="Data" 
-            required autocomplete="off" name="data">
-            <span class="mensagem-erro" data-erro=""></span>
-           </div>
-
+          
     </div>
     
     <button type="submit" class="btn btn-primary" onclick="validacampo()">Cadastrar</button>

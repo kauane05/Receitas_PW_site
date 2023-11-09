@@ -22,11 +22,11 @@ function validacampo(campo){
         }
     }
 
-    if(campo.name == "nomefun")
+    if(campo.name == "email")
     {
         if(campo.value.length<5)
         {
-            msnErro.textContent = "Digite um nome";
+            msnErro.textContent = "Digite um email";
         }
         else
         {
@@ -34,64 +34,15 @@ function validacampo(campo){
         }
     }
 
-    if(campo.name == "numero")
+    if(campo.name == "senha")
     {
         if(campo.value.length<5)
         {
-            msnErro.textContent = "Digite o número de assinatura";
+            msnErro.textContent = "Digite uma senha";
         }
         else
         {
             msnErro.textContent="";
-        }
-    }
-
-    if(campo.name == "valor")
-    {
-        if(campo.value.length<5)
-        {
-            msnErro.textContent = "Digite o valor da assinatura";
-        }
-        else
-        {
-            msnErro.textContent="";
-        }
-    }
-
-    
-    if(campo.name === "tipo")
-    {
-        if(campo.value === "")
-        {
-            msnErro.textContent = "Informe o tipo de pagamento";
-        }
-        else
-        {
-            msnErro.textContent = "";
-        }
-    }
-
-    if(campo.name === "periodo")
-    {
-        if(campo.value === "")
-        {
-            msnErro.textContent = "Informe o período de assinatura";
-        }
-        else
-        {
-            msnErro.textContent = "";
-        }
-    }
-
-    if(campo.name === "data")
-    {
-        if(campo.value === "")
-        {
-            msnErro.textContent = "Informe a data";
-        }
-        else
-        {
-            msnErro.textContent = "";
         }
     }
 
