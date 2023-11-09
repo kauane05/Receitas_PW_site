@@ -15,7 +15,7 @@ if($_conn===FALSE) {
     $sql = "INSERT INTO assinatura (nome_ass, email_ass, senha_ass) VALUES ('$nome', ' $email', '$senha')";
 
     if ($_conn->query($sql) === TRUE) {
-        echo "Assinatura cadastrado com sucesso!";
+        echo "Assinatura cadastrada com sucesso!";
     } else {
         echo "Erro ao cadastrar a assinatura: " . $_conn->error;
     } 

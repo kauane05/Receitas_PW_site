@@ -58,7 +58,7 @@ function validacampo(campo){
         }
     }
 
-    if(campo.name == "data")
+    if(campo.name == "data_nasc")
     {
         if(campo.value.length<5)
         {
@@ -105,5 +105,18 @@ function validacampo(campo){
             msnErro.textContent="";
         }
     }
+
+    if(campo.name == "login")
+    {
+        if(campo.value.length<5)
+        {
+            msnErro.textContent = "Digite o id do login";
+        }
+        else
+        {
+            msnErro.textContent="";
+        }
+    }
+
 
 }
