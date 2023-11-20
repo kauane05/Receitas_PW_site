@@ -34,7 +34,7 @@ function validacampo(campo){
      }
  }
 
- if(campo.name == "preparo")
+ if(campo.name == "modo_preparo")
  {
      if(campo.value.length<5)
      {
@@ -58,7 +58,7 @@ function validacampo(campo){
      }
  }
 
- if(campo.name == "preparo")
+ if(campo.name == "tempo_preparo")
  {
      if(campo.value.length<5)
      {
@@ -70,7 +70,7 @@ function validacampo(campo){
      }
  } 
 
- if(campo.name == "nome")
+ if(campo.name == "nome_chef")
  {
      if(campo.value.length<5)
      {
@@ -82,7 +82,7 @@ function validacampo(campo){
      }
  }
 
- if(campo.name == "data")
+ if(campo.name == "data_publi")
  {
      if(campo.value.length<5)
      {
@@ -94,7 +94,7 @@ function validacampo(campo){
      }
  }
 
- if(campo.name == "nome")
+ if(campo.name == "quant_pessoas")
  {
      if(campo.value.length<5)
      {

@@ -94,7 +94,7 @@ function validacampo(campo){
         }
     }
 
-    if(campo.name == "data")
+    if(campo.name == "data_nasc")
     {
         if(campo.value.length<5)
         {

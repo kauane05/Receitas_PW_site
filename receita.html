@@ -6,7 +6,7 @@
     <title>Cadastrar</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-
+    <link rel="stylesheet" href="php/cadastrar_receita.php">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
@@ -27,7 +27,7 @@
       <a href="assinatura.html">Cadastrar Assinatura</a>
   </nav>
 
-          <form>
+          <form action="php/cadastrar_receita.php" method="POST">
       <div class="cadastro">
         <div class="row g3">
 
@@ -58,21 +58,21 @@
 
           <div class="form-group col-md-6">
             <label for="preparo">Modo de preparo</label>
-            <input type="text" class="form-control" name="preparo" id="preparo"
+            <input type="text" class="form-control" name="modo_preparo" id="preparo"
              required="required" autocomplete="off" placeholder="Modo de preparo">
             <span class="mensagem-erro" data-erro=""></span>
           </div>
 
           <div class="form-group col-md-6">
             <label for="preparo">Tempo de preparo</label>
-            <input type="text" class="form-control" name="preparo" id="preparo"
+            <input type="text" class="form-control" name="tempo_preparo" id="preparo"
              required="required" autocomplete="off" placeholder="Tempo de preparo">
             <span class="mensagem-erro" data-erro=""></span>
           </div>
 
           <div class="form-group col-md-6">
             <label for="Nome">Nome do chef da receita</label>
-            <input type="text" class="form-control" id="Nome" placeholder="Nome" name="nome"
+            <input type="text" class="form-control" id="Nome" placeholder="Nome" name="nome_chef"
             required minlength="4" maxlength="10" title="Nome inválido" autocomplete="off">
             <span class="mensagem-erro" data-erro=""></span>
           </div>
@@ -80,13 +80,13 @@
           <div class="form-group col-md-6">
             <label for="Endereco">Data de publicação</label>
             <input type="date" class="form-control" id="Data" 
-            required autocomplete="off" name="data">
+            required autocomplete="off" name="data_publi">
             <span class="mensagem-erro" data-erro=""></span>
            </div>  
 
            <div class="form-group col-md-6">
             <label for="Nome">Quantas pessoas serve</label>
-            <input type="text" class="form-control" id="Nome" placeholder="Quantidade" name="nome"
+            <input type="text" class="form-control" id="Nome" placeholder="Quantidade" name="quant_pessoas"
             required minlength="4" maxlength="10" title="Nome inválido" autocomplete="off">
             <span class="mensagem-erro" data-erro=""></span>
           </div>
