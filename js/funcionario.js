@@ -107,7 +107,7 @@ function validacampo(campo){
     }
 
     const cpf = document.querySelector("#CPF");
-    cpf.value = cpf.value.replace(/\.|-/g, "");
+    //cpf.value = cpf.value.replace(/\.|-/g, "");
   
     if (
       cpf.value === "11111111111" ||
