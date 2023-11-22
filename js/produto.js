@@ -58,6 +58,18 @@ function validacampo(campo){
         }
     }
 
+    if(campo.name == "valor")
+    {
+        if(campo.value.length<5)
+        {
+            msnErro.textContent = "Digite o valor do produto";
+        }
+        else
+        {
+            msnErro.textContent="";
+        }
+    }
+
     if(campo.name == "pro_des")
     {
         if(campo.value.length<5)

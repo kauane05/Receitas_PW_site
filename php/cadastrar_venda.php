@@ -7,17 +7,17 @@ if($_conn===FALSE) {
 
  if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $nome = $_POST["produto"];
-    $sobrenome = $_POST["sobrenome"];
-    $senha = $_POST["senha"];
-    $telefone = $_POST["telefone"];
-    $data_nasc = $_POST["data_nasc"];
-    $email = $_POST["email"];
+    $nomeCli = $_POST["nome"];
+    $nomeFun = $_POST["nomefun"];
+    $numero = $_POST["numero"];
+    $valor = $_POST["valor"];
+    $tipo = $_POST["tipo"];
+    $dataVen = $_POST["dataVen"];
     $endereco = $_POST["endereco"];
-    $cpf = $_POST["cpf"];
+    $data = $_POST["data"];
 
 
-    $sql = "INSERT INTO venda (nome_usu, sobrenome_usu, senha_usu, telefone_usu, data_nasc_usu, email_usu, endereco_usu, cpf_usu) VALUES ('$nome', ' $sobrenome', '$senha','$telefone','$data_nasc','$email', '$endereco', '$cpf')";
+    $sql = "INSERT INTO venda (nomeCli_ven, nomeFun_ven, numero_ven, valor_ven, tipo_ven, data_ven, endereco_ven, dataEnt_ven) VALUES ('$nomeCli, ' $nomeFun', '$numero','$valor','$tipo','$dataVen', '$endereco', '$data')";
 
     if ($_conn->query($sql) === TRUE) {
         echo "Venda cadastrada com sucesso!";

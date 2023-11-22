@@ -11,11 +11,12 @@ if($_conn===FALSE) {
     $codigo= $_POST["codigo"];
     $descricao = $_POST["pro_des"];
     $quant = $_POST["quantidade"];
+    $valor = $_POST["valor"];
     $data_vali = $_POST["data_vali"];
     $data_fab = $_POST["data"];
 
 
-    $sql = "INSERT INTO produto (nome_pro, codigo_barras_pro, data_vali_pro, data_fab_pro, quant_pro, descricao_pro) VALUES ('$nome', ' $codigo', '$data_vali','$data_fab','$quant','$descricao')";
+    $sql = "INSERT INTO produto (nome_pro, codigo_barras_pro, data_vali_pro, data_fab_pro, quant_pro, valor_pro, descricao_pro) VALUES ('$nome', ' $codigo', '$data_vali','$data_fab','$quant', '$valor', '$descricao')";
 
     if ($_conn->query($sql) === TRUE) {
         echo "Produto cadastrado com sucesso!";
