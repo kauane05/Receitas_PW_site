@@ -1,5 +1,5 @@
 <?php
-$_conn = mysqli_connect('127.0.0.1','root','','bd_site');
+$_conn = mysqli_connect('127.0.0.1','root','','bd_site_pw2');
 if($_conn===FALSE) {
  echo "Não foi possível conectar ao Servidor de banco de dados ";
 } else {

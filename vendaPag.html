@@ -65,11 +65,11 @@
     </div>
 
     
-    <form action="">
+    <form action="php/vendaPag.php" method="POST">
 
         <div class="inputBox">
             <span>Dia</span>
-            <select name="" id="">
+            <select name="dia" id="dia">
                 <option value="days" selected disabled>Dia</option>
                 <option value="01">Domingo</option>
                 <option value="02">Segunda</option>
@@ -83,7 +83,7 @@
         
         <div class="inputBox">
             <span>Número da Venda</span>
-            <select name="" id="">
+            <select name="numeroVen" id="numeroVen">
                 <option value="Código" selected disabled>Código</option>
                 <option value="01">01</option>
                 <option value="02">02</option>
@@ -93,22 +93,22 @@
 
         <div class="inputBox">
             <span>Valor</span>
-            <input type="text" placeholder="00,00 R$" >
+            <input name="valor" id="valor" type="text" placeholder="00,00 R$" >
         </div>
 
         <div class="inputBox">
             <span>Número do Cartão</span>
-            <input type="text" maxlength="16" class="card-number-input">
+            <input name="numeroCart" id="numeroCart" type="text" maxlength="16" class="card-number-input">
         </div>
         <div class="inputBox">
             <span>Titular do Cartão</span>
-            <input type="text" class="card-holder-input">
+            <input name="titularCart" id="titularCart" type="text" class="card-holder-input">
         </div>
 
         <div class="flexbox">
             <div class="inputBox">
                 <span>Mês de Expiração</span>
-                <select name="" id="" class="month-input">
+                <select name="mes" id="mes" class="month-input">
                     <option value="Mês" selected disabled>Mês</option>
                     <option value="01">01</option>
                     <option value="02">02</option>
@@ -126,7 +126,7 @@
             </div>
             <div class="inputBox">
                 <span>Ano de Expiração</span>
-                <select name="" id="" class="year-input">
+                <select name="ano" id="ano" class="year-input">
                     <option value="Ano" selected disabled>Ano</option>
                     <option value="2021">2021</option>
                     <option value="2022">2022</option>
@@ -142,7 +142,7 @@
             </div>
             <div class="inputBox">
                 <span>CVV</span>
-                <input type="text" maxlength="4" class="cvv-input">
+                <input name="cvvCart" id="cvvCart" type="text" maxlength="4" class="cvv-input">
             </div>
         </div>
         <input type="submit" value="Finalizar Venda" class="submit-btn">

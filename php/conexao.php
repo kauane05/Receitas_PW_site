@@ -2,7 +2,7 @@
 $servername = "127.0.0.1";
 $username = "root";
 $password = "";
-$dbname = "bd_site";
+$dbname = "bd_site_pw2";
 
 // Criar conexão com o banco de dados
 $conn = new mysqli($servername, $username, $password, $dbname);
