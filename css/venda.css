@@ -10,7 +10,7 @@
 }
 
 .container form{
-    background: #AA1D1D;
+    background: #1daaa3;
     border-radius: 5px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -48,7 +48,7 @@
 
 .container form .submit-btn{
     width: 100%;
-    background:linear-gradient(45deg, #1cbec4, #21078b);
+    background:linear-gradient(45deg, #1cbec4, #050505);
     margin-top: 20px;
     padding: 10px;
     font-size: 20px;
@@ -75,7 +75,7 @@
     height: 100%;
     width: 100%;
     top: 0; left: 0;
-    background:linear-gradient(45deg, #1cbec4, #21078b);
+    background:linear-gradient(45deg, #233030, #000000);
     border-radius: 5px;
     backface-visibility: hidden;
     box-shadow: 0 15px 25px rgba(0,0,0,.2);
@@ -88,7 +88,7 @@
     display:flex;
     align-items:center;
     justify-content: space-between;
-    padding-top: 50px;
+    padding-top: 35px;
 }
 
 .container .card-container .front .imagens{
@@ -120,18 +120,18 @@
     top:0; left: 0;
     height: 100%;
     width: 100%;
-    background:linear-gradient(45deg, #1cbec4, #21078b);
+    background:linear-gradient(45deg, #181d1d, #020202);
     border-radius: 5px;
     padding: 20px 0;
     text-align: right;
     backface-visibility: hidden;
-    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
     transform:perspective(1000px) rotateY(180deg);
     transition:transform .4s ease-out;
 }
 
 .container .card-container .back .stripe{
-    background: #000;
+    background: #3c3c3c;
     width: 100%;
     margin: 10px 0;
     height: 50px;
@@ -147,9 +147,9 @@
 }
 
 .container .card-container .back .box .cvv-box{
-    height: 50px;
-    padding: 10px;
-    margin-top: 5px;
+    height: 40px;
+    padding: 2px;
+    margin-top: 8px;
     color:#333;
     background: #fff;
     border-radius: 5px;
