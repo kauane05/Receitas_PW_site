@@ -105,18 +105,4 @@ function validacampo(campo){
             msnErro.textContent="";
         }
     }
-
-    if(campo.name == "login")
-    {
-        if(campo.value.length<5)
-        {
-            msnErro.textContent = "Digite o id do login";
-        }
-        else
-        {
-            msnErro.textContent="";
-        }
-    }
-
-
 }
