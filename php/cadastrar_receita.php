@@ -7,7 +7,7 @@ if($_conn===FALSE) {
 
  if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $nome = $_POST["produto"];
+    $nome = $_POST["nome"];
     $ingrediente = $_POST["ingrediente"];
     $tipo = $_POST["tipo"];
     $modo_preparo = $_POST["modo_preparo"];

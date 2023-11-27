@@ -17,7 +17,8 @@ if($_conn===FALSE) {
     $data = $_POST["data"];
 
 
-    $sql = "INSERT INTO venda (nomeCli_ven, nomeFun_ven, numero_ven, valor_ven, tipo_ven, data_ven, endereco_ven, dataEnt_ven) VALUES ('$nomeCli, ' $nomeFun', '$numero','$valor','$tipo','$dataVen', '$endereco', '$data')";
+    $sql = "INSERT INTO venda (nomeCli_ven, nomeFun_ven, numero_ven, valor_ven, tipo_ven, data_ven, endereco_ven, dataEnt_ven) VALUES
+                             ('$nomeCli', ' $nomeFun', '$numero','$valor','$tipo','$dataVen', '$endereco', '$data') ";
 
     if ($_conn->query($sql) === TRUE) {
         echo "Venda cadastrada com sucesso!";
