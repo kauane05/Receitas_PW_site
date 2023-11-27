@@ -14,7 +14,7 @@ const input = document.querySelectorAll("[required]");
         {
             if(campo.value.length<5)
             {
-                msnErro.textContent = "Digite um nome";
+                msnErro.textContent = "Digite o nome do cliente";
             }
             else
             {
@@ -26,7 +26,7 @@ const input = document.querySelectorAll("[required]");
         {
             if(campo.value.length<5)
             {
-                msnErro.textContent = "Digite um nome";
+                msnErro.textContent = "Digite o nome do funcionário";
             }
             else
             {
@@ -70,7 +70,7 @@ const input = document.querySelectorAll("[required]");
             }
         }
 
-        if(campo.name == "data")
+        if(campo.name == "dataVen")
         {
             if(campo.value.length<5)
             {

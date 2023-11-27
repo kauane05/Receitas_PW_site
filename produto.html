@@ -25,6 +25,7 @@
       <a href="usuario.html">Cadastrar Usuário</a>
       <a href="venda.html">Cadastrar Venda</a>
       <a href="assinatura.html">Cadastrar Assinatura</a>
+      <a href="vendaPag.html">Pagamento</a>
   </nav>
 
     <form action="php/cadastrar_produto.php" method="POST">
@@ -58,6 +59,13 @@
                required="required" autocomplete="off" placeholder="Quantidade do produto">
               <span class="mensagem-erro" data-erro=""></span>
             </div>
+
+            <div class="form-group col-md-6">
+              <label for="Valor">Valor do Produto</label>
+              <input type="text" class="form-control" id="Valor" placeholder="Digite o valor do produto"
+              required  autocomplete="off" name="valor">
+              <span class="mensagem-erro" data-erro=""></span>
+             </div>
 
             <div class="form-group col-md-6">
               <label for="Nome">Descrição do produto</label>

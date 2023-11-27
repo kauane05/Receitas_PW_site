@@ -25,9 +25,10 @@
         <a href="usuario.html">Cadastrar Usuário</a>
         <a href="venda.html">Cadastrar Venda</a>
         <a href="assinatura.html">Cadastrar Assinatura</a>
+        <a href="vendaPag.html">Pagamento</a>
     </nav>
 
-    <form>
+    <form action="php/cadastrar_venda.php" method="POST">
         <div class="cadastro">
         <div class="row g3">
 
@@ -75,7 +76,7 @@
           <div class="form-group col-md-6">
             <label for="Data">Data da venda</label>
             <input type="date" class="form-control" id="Data" 
-            required autocomplete="off" name="data">
+            required autocomplete="off" name="dataVen">
             <span class="mensagem-erro" data-erro=""></span>
            </div>
 
