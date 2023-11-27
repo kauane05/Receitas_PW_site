@@ -161,3 +161,9 @@
     height: 30px;
     width: auto;
 }
+
+.div-grid { 
+    display: grid; 
+    place-items: left; 
+    
+}
