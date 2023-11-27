@@ -13,11 +13,11 @@
         <th>Dia</th>
         <th>Número</th>
         <th>Valor</th>
-        <th>Número do Cartão</th
-        <th>Titular do Cartão</th
-        <th>Mês</th
-        <th>Ano</th
-        <th>CVV</th
+        <th>Número do Cartão</th>
+        <th>Titular do Cartão</th>
+        <th>Mês</th>
+        <th>Ano</th>
+        <th>CVV</th>
 
     </tr>
 
@@ -26,7 +26,7 @@
     include 'conexao.php';
 
     // Consulta para selecionar os dados da tabela usuarios
-    $sql = "SELECT id_pag, dia_pag, numeroVen_pag, valor_pag, numeroCart_pag, titularCart_pag, mes_pag, ano_pag, cvv_pag FROM pagamento";
+    $sql = "SELECT id_pag, dia_pag, numeroVen_pag, valor_pag, numeroCart_pag, titularCart_pag, mes_pag, ano_pag, cvvCart_pag FROM pagamento";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
@@ -41,7 +41,7 @@
             echo "<td>" . $row["titularCart_pag"] . "</td>";
             echo "<td>" . $row["mes_pag"] . "</td>";
             echo "<td>" . $row["ano_pag"] . "</td>";
-            echo "<td>" . $row["cvv_pag"] . "</td>";
+            echo "<td>" . $row["cvvCart_pag"] . "</td>";
             echo "</tr>";
         }
     } else {
